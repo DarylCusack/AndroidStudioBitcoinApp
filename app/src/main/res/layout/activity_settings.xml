@@ -1,0 +1,59 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bitcoin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hdsd.bitcoinexrate.SettingsActivity" >
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true">
+
+       <Switch
+           style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allow automatic API syncing                            "
+            android:id="@+id/switch0"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="25dp"/>
+        <!--This design concept would require java code to automatically turn off one API polling rate switch
+        if the other was turned on, and vice versa.-->
+        <Switch
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poll API once Daily                                    "
+            android:id="@+id/switch1"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="25dp"/>
+        <Switch
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Only poll API when connected to wifi      "
+            android:id="@+id/switch2"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="25dp"/>
+        <Switch
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allow push notifications                             "
+            android:id="@+id/switch3"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="25dp"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
